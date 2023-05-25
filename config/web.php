@@ -130,6 +130,9 @@ $config = [
     'params' => $params,
 
     'modules'=>[
+        'gii' => [
+            'class' => 'yii\gii\Module',
+        ],
         'user-management' => [
             'class' => 'webvimark\modules\UserManagement\UserManagementModule',
 
