@@ -1,1 +1,1 @@
-web: sh -c 'composer run-script heroku-start'
+web: vendor/bin/heroku-php-apache2 public/
