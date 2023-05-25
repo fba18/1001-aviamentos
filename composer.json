@@ -59,10 +59,7 @@
         "post-create-project-cmd": [
             "yii\\composer\\Installer::postCreateProject",
             "yii\\composer\\Installer::postInstall"
-        ],
-
-        "heroku-start": "php -S 0.0.0.0:$PORT -t web/"
-
+        ]
     },
     "extra": {
         "yii\\composer\\Installer::postCreateProject": {
