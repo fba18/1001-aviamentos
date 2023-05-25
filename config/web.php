@@ -122,7 +122,7 @@ $config = [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
-
+                'user-management/auth/login' => 'user-management/auth/login',
             ],
         ],
 
