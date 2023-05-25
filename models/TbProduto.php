@@ -38,9 +38,13 @@ class TbProduto extends \yii\db\ActiveRecord
 
 
                 ],
-                'value' => function ($event) {
+                /*'value' => function ($event) {
                 return str_replace(",",".",str_replace("R$","", $this->preco_produto));
 
+                },*/
+                'value' => function ($event) {
+                    $preco = $this->preco_produto ?? ''; // Verifica se $this->preco_produto é nulo e atribui uma string vazia caso seja
+                    return str_replace(",", ".", str_replace("R$", "", $preco));
                 },
             ],
             [
